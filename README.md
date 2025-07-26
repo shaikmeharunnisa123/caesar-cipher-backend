@@ -1,23 +1,15 @@
-# Caesar Cipher - Backend Assignment
+# Caesar Cipher Backend
 
-This project implements Caesar Cipher encoding and decoding using Node.js and Express.
+This is a simple Express.js backend to encode and decode messages using the Caesar Cipher technique.
 
-## 🧠 Problem Statement
+## Endpoints
 
-In a Caesar cipher, each letter in the plaintext is shifted a fixed number of positions down the alphabet.
+### POST /encode
+- Body:
+```json
+{
+  "message": "Hello",
+  "shift": 3
+}
 
-Example with shift 3:
-- `A` → `D`
-- `B` → `E`
-- `Z` → `C`
-
-## ⚙️ How to Run
-
-1. Install Node.js and npm (if not already)
-2. Clone this repo
-3. In terminal:
-
-```bash
-npm install
-node index.js
 
